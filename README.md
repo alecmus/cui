@@ -56,6 +56,8 @@ class gui_app : public liblec::cui::gui {
 public:
     bool layout(page& persistent_page, page& home_page, std::string& error) override {
         home_page.set_name("Sample cui app");
+        set_width(400);
+        set_height(200);
         set_min_width_and_height(width(), height() + title_bar_height());
 
         liblec::cui::widgets::text text_1;
@@ -76,6 +78,9 @@ int main() {
     else return 0;
 }
 ```
+
+The above code displays the following form:<br/><br/>
+![](https://github.com/alecmus/files/blob/master/liblec/cui/screenshots/cui_1.0.0_screenshot_01.PNG?raw=true)
 
 ## DEPLOYING YOUR APPLICATION
 If it's a 32 bit build you will need to deploy it with cui32.dll in the same folder. If it's a 64 bit build use the cui64.dll.
