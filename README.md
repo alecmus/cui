@@ -42,5 +42,40 @@ Now you can use the required functions by calling #include <liblec/cui/...>
 
 Build.
 
+## USING THE LIBRARY
+The library has two layers: the outer liblec::cui::gui layer and the inner liblec::cui::gui_raw::cui_raw layer. While gui applications can be build using the inner layer, using the outer layer (which is essentially a wrapper for the inner layer), is <b>recommended</b>.
+
+Usage examples are available in-code (in [gui.h](https://github.com/alecmus/cui/blob/master/gui.h)).
+
+Here is example code for making a simple form with a string of text:
+
+```
+#include <liblec/cui/gui.h>
+
+class gui_app : public liblec::cui::gui {
+public:
+    bool layout(page& persistent_page, page& home_page, std::string& error) override {
+        home_page.set_name("Sample cui app");
+        set_min_width_and_height(width(), height() + title_bar_height());
+
+        liblec::cui::widgets::text text_1;
+        text_1.text_value = "Sample text";
+        text_1.rect = { 10, (long)width() - 10, 10, 30 };
+        home_page.add_text(text_1);
+
+        return true;
+    }
+
+    void on_stop() override { stop(); }
+};
+
+int main() {
+    gui_app app;
+    std::string error;
+    if (!app.run(error)) return 1;
+    else return 0;
+}
+```
+
 ## DEPLOYING YOUR APPLICATION
 If it's a 32 bit build you will need to deploy it with cui32.dll in the same folder. If it's a 64 bit build use the cui64.dll.
