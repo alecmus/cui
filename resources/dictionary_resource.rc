@@ -1,0 +1,17 @@
+/*
+** dictionary_resource.rc - dictionary resource file
+**
+** cui framework
+** Copyright (c) 2016 Alec T. Musasa (alecmus at live dot com)
+**
+*******************************************************************************
+** This file is part of the liblec library which is released under the Creative
+** Commons Attribution Non-Commercial 2.0 license (CC-BY-NC 2.0). See the file
+** LICENSE.txt or go to https://github.com/alecmus/liblec/blob/master/LICENSE.md
+** for full license details.
+*/
+
+#include "dictionary_resource.h"
+
+// this file MUST use LF endings ('\n') NOT CRLF endings ('\r\n') to seperate words
+IDTXT_DICT TEXTFILE "doc/dict.txt"

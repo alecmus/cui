@@ -1,0 +1,54 @@
+/*
+** cui.rc - cui resource file
+**
+** cui framework
+** Copyright (c) 2016 Alec T. Musasa (alecmus at live dot com)
+**
+*******************************************************************************
+** This file is part of the liblec library which is released under the Creative
+** Commons Attribution Non-Commercial 2.0 license (CC-BY-NC 2.0). See the file
+** LICENSE.txt or go to https://github.com/alecmus/liblec/blob/master/LICENSE.md
+** for full license details.
+*/
+
+#include "resource.h"
+
+IDP_BOLD				PNG		"png/richedit/bold.png"
+IDP_ITALIC				PNG		"png/richedit/italic.png"
+IDP_UNDERLINE			PNG		"png/richedit/underline.png"
+IDP_STRIKETHROUGH		PNG		"png/richedit/strikethrough.png"
+IDP_SUBSCRIPT			PNG		"png/richedit/subscript.png"
+IDP_SUPERSCRIPT			PNG		"png/richedit/superscript.png"
+IDP_LARGER				PNG		"png/richedit/larger.png"
+IDP_SMALLER				PNG		"png/richedit/smaller.png"
+IDP_FONTCOLOR			PNG		"png/richedit/font_color.png"
+
+IDP_LEFT_ALIGN_20		PNG		"png/richedit/left_align_20.png"
+IDP_CENTER_ALIGN_20		PNG		"png/richedit/center_align_20.png"
+IDP_RIGHT_ALIGN_20		PNG		"png/richedit/right_align_20.png"
+IDP_JUSTIFY_20			PNG		"png/richedit/justify_align_20.png"
+IDP_LIST_20				PNG		"png/richedit/bullets_20.png"
+
+IDP_LEFT_ALIGN_25		PNG		"png/richedit/left_align_25.png"
+IDP_CENTER_ALIGN_25		PNG		"png/richedit/center_align_25.png"
+IDP_RIGHT_ALIGN_25		PNG		"png/richedit/right_align_25.png"
+IDP_JUSTIFY_25			PNG		"png/richedit/justify_align_25.png"
+IDP_LIST_25				PNG		"png/richedit/bullets_25.png"
+
+IDP_LEFT_ALIGN_30		PNG		"png/richedit/left_align_30.png"
+IDP_CENTER_ALIGN_30		PNG		"png/richedit/center_align_30.png"
+IDP_RIGHT_ALIGN_30		PNG		"png/richedit/right_align_30.png"
+IDP_JUSTIFY_30			PNG		"png/richedit/justify_align_30.png"
+IDP_LIST_30				PNG		"png/richedit/bullets_30.png"
+
+IDP_LEFT_ALIGN_35		PNG		"png/richedit/left_align_35.png"
+IDP_CENTER_ALIGN_35		PNG		"png/richedit/center_align_35.png"
+IDP_RIGHT_ALIGN_35		PNG		"png/richedit/right_align_35.png"
+IDP_JUSTIFY_35			PNG		"png/richedit/justify_align_35.png"
+IDP_LIST_35				PNG		"png/richedit/bullets_35.png"
+
+IDP_LEFT_ALIGN_40		PNG		"png/richedit/left_align_40.png"
+IDP_CENTER_ALIGN_40		PNG		"png/richedit/center_align_40.png"
+IDP_RIGHT_ALIGN_40		PNG		"png/richedit/right_align_40.png"
+IDP_JUSTIFY_40			PNG		"png/richedit/justify_align_40.png"
+IDP_LIST_40				PNG		"png/richedit/bullets_40.png"

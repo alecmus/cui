@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cui_raw\CBrush\CBrush.h" />
+    <ClInclude Include="cui_raw\CCmdLine\CCmdLine.h" />
+    <ClInclude Include="cui_raw\CCriticalSection\CCriticalSection.h" />
+    <ClInclude Include="cui_raw\CDeferPos\CDeferPos.h" />
+    <ClInclude Include="cui_raw\CGdiPlusBitmap\CGdiPlusBitmap.h" />
+    <ClInclude Include="cui_raw\CImage\CImage.h" />
+    <ClInclude Include="cui_raw\CImage\GetEncoderClsid\GetEncoderClsid.h" />
+    <ClInclude Include="cui_raw\clrAdjust\clrAdjust.h" />
+    <ClInclude Include="cui_raw\CPopupMenu\CPopupMenu.h" />
+    <ClInclude Include="cui_raw\CResizer\CResizer.h" />
+    <ClInclude Include="cui_raw\cui_raw.h" />
+    <ClInclude Include="cui_raw\cui_rawImpl\CListView\CListView.h" />
+    <ClInclude Include="cui_raw\cui_rawImpl\CMouseTrack\CMouseTrack.h" />
+    <ClInclude Include="cui_raw\cui_rawImpl\Combobox\Combobox.h" />
+    <ClInclude Include="cui_raw\cui_rawImpl\CShadow\CShadow.h" />
+    <ClInclude Include="cui_raw\cui_rawImpl\cui_rawImpl.h" />
+    <ClInclude Include="cui_raw\cui_rawImpl\DrawRoundRect\DrawRoundRect.h" />
+    <ClInclude Include="cui_raw\cui_rawImpl\RichEdit\RichEdit.h" />
+    <ClInclude Include="cui_raw\cui_rawImpl\TooltipControl\TooltipControl.h" />
+    <ClInclude Include="cui_raw\Error\Error.h" />
+    <ClInclude Include="cui_raw\HlpFxs\HlpFxs.h" />
+    <ClInclude Include="cui_raw\reverse.h" />
+    <ClInclude Include="cui_raw\scaleAdjust\scaleAdjust.h" />
+    <ClInclude Include="cui_raw\XCreateFont\XCreateFont.h" />
+    <ClInclude Include="error\win_error.h" />
+    <ClInclude Include="gui.h" />
+    <ClInclude Include="cui.h" />
+    <ClInclude Include="limit_single_instance\limit_single_instance.h" />
+    <ClInclude Include="password_rating\dictionary\dictionary.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="resources\dictionary_resource.h" />
+    <ClInclude Include="versioninfo.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resources\cui.rc" />
+    <ResourceCompile Include="resources\dictionary_resource.rc" />
+    <ResourceCompile Include="versioninfo.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cui_raw\CBrush\CBrush.cpp" />
+    <ClCompile Include="cui_raw\CDeferPos\CDeferPos.cpp" />
+    <ClCompile Include="cui_raw\CGdiPlusBitmap\CGdiPlusBitmap.cpp" />
+    <ClCompile Include="cui_raw\CImage\CImageConv.cpp" />
+    <ClCompile Include="cui_raw\CImage\CSplash.cpp" />
+    <ClCompile Include="cui_raw\CImage\GetEncoderClsid\GetEncoderClsid.cpp" />
+    <ClCompile Include="cui_raw\CImage\ResizeGdiplusBitmap.cpp" />
+    <ClCompile Include="cui_raw\clrAdjust\clrAdjust.cpp" />
+    <ClCompile Include="cui_raw\CPopupMenu\CPopupMenu.cpp" />
+    <ClCompile Include="cui_raw\CResizer\CResizer.cpp" />
+    <ClCompile Include="cui_raw\cui_raw.cpp" />
+    <ClCompile Include="cui_raw\cui_rawImpl\AddControls.cpp" />
+    <ClCompile Include="cui_raw\cui_rawImpl\BarChart\BarChart.cpp" />
+    <ClCompile Include="cui_raw\cui_rawImpl\Button\Button.cpp" />
+    <ClCompile Include="cui_raw\cui_rawImpl\CListView\CListView.cpp" />
+    <ClCompile Include="cui_raw\cui_rawImpl\Combobox\Combobox.cpp" />
+    <ClCompile Include="cui_raw\cui_rawImpl\ControlButtons\ControlButtons.cpp" />
+    <ClCompile Include="cui_raw\cui_rawImpl\CShadow\CShadow.cpp" />
+    <ClCompile Include="cui_raw\cui_rawImpl\cui_rawImpl.cpp" />
+    <ClCompile Include="cui_raw\cui_rawImpl\Date\Date.cpp" />
+    <ClCompile Include="cui_raw\cui_rawImpl\DrawRoundRect\DrawRoundRect.cpp" />
+    <ClCompile Include="cui_raw\cui_rawImpl\Edit\Edit.cpp" />
+    <ClCompile Include="cui_raw\cui_rawImpl\Image\Image.cpp" />
+    <ClCompile Include="cui_raw\cui_rawImpl\LineChart\LineChart.cpp" />
+    <ClCompile Include="cui_raw\cui_rawImpl\msgBox\msgBox.cpp" />
+    <ClCompile Include="cui_raw\cui_rawImpl\notX\notX.cpp" />
+    <ClCompile Include="cui_raw\cui_rawImpl\OpenSaveFile\OpenSaveFile.cpp" />
+    <ClCompile Include="cui_raw\cui_rawImpl\PasswordStrength\PasswordStrength.cpp" />
+    <ClCompile Include="cui_raw\cui_rawImpl\PieChart\PieChart.cpp" />
+    <ClCompile Include="cui_raw\cui_rawImpl\Progress\Progress.cpp" />
+    <ClCompile Include="cui_raw\cui_rawImpl\Rect\Rect.cpp" />
+    <ClCompile Include="cui_raw\cui_rawImpl\RichEdit\RichEdit.cpp" />
+    <ClCompile Include="cui_raw\cui_rawImpl\SelectFolder\SelectFolder.cpp" />
+    <ClCompile Include="cui_raw\cui_rawImpl\Selector\Selector.cpp" />
+    <ClCompile Include="cui_raw\cui_rawImpl\StarRating\StarRating.cpp" />
+    <ClCompile Include="cui_raw\cui_rawImpl\Tab\Tab.cpp" />
+    <ClCompile Include="cui_raw\cui_rawImpl\Text\Text.cpp" />
+    <ClCompile Include="cui_raw\cui_rawImpl\Time\Time.cpp" />
+    <ClCompile Include="cui_raw\cui_rawImpl\ToggleButton\ToggleButton.cpp" />
+    <ClCompile Include="cui_raw\cui_rawImpl\TooltipControl\TooltipControl.cpp" />
+    <ClCompile Include="cui_raw\cui_rawImpl\upDown\upDown.cpp" />
+    <ClCompile Include="cui_raw\Error\Error.cpp" />
+    <ClCompile Include="cui_raw\scaleAdjust\scaleAdjust.cpp" />
+    <ClCompile Include="cui_raw\XCreateFont\XCreateFont.cpp" />
+    <ClCompile Include="error\win_error.cpp" />
+    <ClCompile Include="limit_single_instance\limit_single_instance.cpp" />
+    <ClCompile Include="password_rating\dictionary\dictionary.cpp" />
+    <ClCompile Include="password_rating\password_rating.cpp" />
+    <ClCompile Include="gui.cpp" />
+    <ClCompile Include="cui.cpp" />
+    <ClCompile Include="time_stamp\time_stamp.cpp" />
+    <ClCompile Include="unique_string\unique_string.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="resources\png\richedit\bold.png" />
+    <Image Include="resources\png\richedit\bullets_20.png" />
+    <Image Include="resources\png\richedit\bullets_25.png" />
+    <Image Include="resources\png\richedit\bullets_30.png" />
+    <Image Include="resources\png\richedit\bullets_35.png" />
+    <Image Include="resources\png\richedit\bullets_40.png" />
+    <Image Include="resources\png\richedit\center_align_20.png" />
+    <Image Include="resources\png\richedit\center_align_25.png" />
+    <Image Include="resources\png\richedit\center_align_30.png" />
+    <Image Include="resources\png\richedit\center_align_35.png" />
+    <Image Include="resources\png\richedit\center_align_40.png" />
+    <Image Include="resources\png\richedit\font_color.png" />
+    <Image Include="resources\png\richedit\italic.png" />
+    <Image Include="resources\png\richedit\justify_align_20.png" />
+    <Image Include="resources\png\richedit\justify_align_25.png" />
+    <Image Include="resources\png\richedit\justify_align_30.png" />
+    <Image Include="resources\png\richedit\justify_align_35.png" />
+    <Image Include="resources\png\richedit\justify_align_40.png" />
+    <Image Include="resources\png\richedit\larger.png" />
+    <Image Include="resources\png\richedit\left_align_20.png" />
+    <Image Include="resources\png\richedit\left_align_25.png" />
+    <Image Include="resources\png\richedit\left_align_30.png" />
+    <Image Include="resources\png\richedit\left_align_35.png" />
+    <Image Include="resources\png\richedit\left_align_40.png" />
+    <Image Include="resources\png\richedit\right_align_20.png" />
+    <Image Include="resources\png\richedit\right_align_25.png" />
+    <Image Include="resources\png\richedit\right_align_30.png" />
+    <Image Include="resources\png\richedit\right_align_35.png" />
+    <Image Include="resources\png\richedit\right_align_40.png" />
+    <Image Include="resources\png\richedit\smaller.png" />
+    <Image Include="resources\png\richedit\strikethrough.png" />
+    <Image Include="resources\png\richedit\subscript.png" />
+    <Image Include="resources\png\richedit\superscript.png" />
+    <Image Include="resources\png\richedit\underline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="LICENSE.txt" />
+    <Text Include="resources\doc\dict.txt" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{704F2071-38A4-4B4D-AFB8-39DDA0F6C7CC}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>lecui</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>cui</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>$(ProjectName)$(PlatformArchitecture)d</TargetName>
+    <OutDir>..\.temp\$(ProjectName)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>..\.temp\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\.temp\$(ProjectName)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>..\.temp\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)$(PlatformArchitecture)d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\.temp\$(ProjectName)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>..\.temp\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)$(PlatformArchitecture)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\.temp\$(ProjectName)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>..\.temp\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)$(PlatformArchitecture)</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;CUI_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\local\libs\boost_1_70_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\local\libs\boost_1_70_0\lib32-msvc-14.2;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy "$(OutDir)$(TargetName).lib" "$(ProjectDir)..\lib\" /F /R /Y /I
+xcopy "$(OutDir)$(TargetName)$(TargetExt)" "$(ProjectDir)..\bin\" /F /R /Y /I
+xcopy "$(ProjectDir)$(ProjectName).h" "$(ProjectDir)..\include\liblec\" /F /R /Y /I
+xcopy "$(ProjectDir)gui.h" "$(SolutionDir)..\include\liblec\$(ProjectName)\" /F /R /Y /I
+xcopy "$(ProjectDir)cui_raw\cui_raw.h" "$(SolutionDir)..\include\liblec\$(ProjectName)\gui_raw\" /F /R /Y /I
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;CUI_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>C:\local\libs\boost_1_70_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\local\libs\boost_1_70_0\lib64-msvc-14.2;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy "$(OutDir)$(TargetName).lib" "$(ProjectDir)..\lib\" /F /R /Y /I
+xcopy "$(OutDir)$(TargetName)$(TargetExt)" "$(ProjectDir)..\bin\" /F /R /Y /I
+xcopy "$(ProjectDir)$(ProjectName).h" "$(ProjectDir)..\include\liblec\" /F /R /Y /I
+xcopy "$(ProjectDir)gui.h" "$(SolutionDir)..\include\liblec\$(ProjectName)\" /F /R /Y /I
+xcopy "$(ProjectDir)cui_raw\cui_raw.h" "$(SolutionDir)..\include\liblec\$(ProjectName)\gui_raw\" /F /R /Y /I
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;CUI_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\local\libs\boost_1_70_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\local\libs\boost_1_70_0\lib32-msvc-14.2;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy "$(OutDir)$(TargetName).lib" "$(ProjectDir)..\lib\" /F /R /Y /I
+xcopy "$(OutDir)$(TargetName)$(TargetExt)" "$(ProjectDir)..\bin\" /F /R /Y /I
+xcopy "$(ProjectDir)$(ProjectName).h" "$(ProjectDir)..\include\liblec\" /F /R /Y /I
+xcopy "$(ProjectDir)gui.h" "$(SolutionDir)..\include\liblec\$(ProjectName)\" /F /R /Y /I
+xcopy "$(ProjectDir)cui_raw\cui_raw.h" "$(SolutionDir)..\include\liblec\$(ProjectName)\gui_raw\" /F /R /Y /I
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;CUI_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>C:\local\libs\boost_1_70_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\local\libs\boost_1_70_0\lib64-msvc-14.2;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy "$(OutDir)$(TargetName).lib" "$(ProjectDir)..\lib\" /F /R /Y /I
+xcopy "$(OutDir)$(TargetName)$(TargetExt)" "$(ProjectDir)..\bin\" /F /R /Y /I
+xcopy "$(ProjectDir)$(ProjectName).h" "$(ProjectDir)..\include\liblec\" /F /R /Y /I
+xcopy "$(ProjectDir)gui.h" "$(SolutionDir)..\include\liblec\$(ProjectName)\" /F /R /Y /I
+xcopy "$(ProjectDir)cui_raw\cui_raw.h" "$(SolutionDir)..\include\liblec\$(ProjectName)\gui_raw\" /F /R /Y /I
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
