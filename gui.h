@@ -13,39 +13,12 @@
 
 #pragma once
 
-#ifdef CUI_EXPORTS
-#define gui_api __declspec(dllexport)
-#include "cui.h"
-#include "cui_raw/cui_raw.h"
+#if defined(CUI_EXPORTS)
+	#include "cui.h"
+	#include "cui_raw/cui_raw.h"
 #else
-#define gui_api __declspec(dllimport)
-#include <liblec/cui.h>
-#include <liblec/cui/gui_raw/cui_raw.h>
-
-// for visual styles
-#pragma comment(linker, "\"/manifestdependency:type='win32' \
-name='Microsoft.Windows.Common-Controls' version='6.0.0.0' \
-processorArchitecture='*' publicKeyToken='6595b64144ccf1df' \
-language='*'\"")
-
-#ifdef _WIN64
-
-#ifdef _DEBUG
-#pragma comment(lib, "cui64d.lib")
-#else
-#pragma comment(lib, "cui64.lib")
-#endif // _DEBUG
-
-#else
-
-#ifdef _DEBUG
-#pragma comment(lib, "cui32d.lib")
-#else
-#pragma comment(lib, "cui32.lib")
-#endif // _DEBUG
-
-#endif // _WIN64
-
+	#include <liblec/cui.h>
+	#include <liblec/cui/gui_raw/cui_raw.h>
 #endif
 
 #include <string>
@@ -69,7 +42,7 @@ namespace liblec
 		/// <summary>
 		/// Rectangle object.
 		/// </summary>
-		class gui_api rect
+		class cui_api rect
 		{
 		public:
 			long left = 0;
@@ -167,12 +140,12 @@ namespace liblec
 				left_bottom,
 			};
 
-			void gui_api snap_to(const liblec::cui::rect &rect_reference,
+			void cui_api snap_to(const liblec::cui::rect &rect_reference,
 				snap snap_type,
 				const size_t &clearance,
 				liblec::cui::rect &rect);
 
-			void gui_api pos_rect(const liblec::cui::rect &rect_reference,
+			void cui_api pos_rect(const liblec::cui::rect &rect_reference,
 				liblec::cui::rect &rect,
 				const size_t &perc_h,
 				const size_t &perc_v);
@@ -815,7 +788,7 @@ namespace liblec
 		/// Any app that uses this class should declare itself as DPI-aware through its application
 		/// manifest.
 		/// </remarks>
-		class gui_api gui
+		class cui_api gui
 		{
 		public:
 			gui();
@@ -834,7 +807,7 @@ namespace liblec
 
 			liblec::cui::gui_raw::cui_raw& get_raw();
 
-			class gui_api page
+			class cui_api page
 			{
 			public:
 				page(const std::string &page_name);

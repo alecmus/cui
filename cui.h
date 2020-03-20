@@ -13,29 +13,30 @@
 
 #pragma once
 
-#ifdef CUI_EXPORTS
-#define cui_api __declspec(dllexport)
+#if defined(CUI_EXPORTS)
+	#define cui_api __declspec(dllexport)
 #else
-#define cui_api __declspec(dllimport)
+	#define cui_api __declspec(dllimport)
 
-#ifdef _WIN64
+	// for visual styles
+	#pragma comment(linker, "\"/manifestdependency:type='win32' \
+	name='Microsoft.Windows.Common-Controls' version='6.0.0.0' \
+	processorArchitecture='*' publicKeyToken='6595b64144ccf1df' \
+	language='*'\"")
 
-#ifdef _DEBUG
-#pragma comment(lib, "cui64d.lib")
-#else
-#pragma comment(lib, "cui64.lib")
-#endif // _DEBUG
-
-#else
-
-#ifdef _DEBUG
-#pragma comment(lib, "cui32d.lib")
-#else
-#pragma comment(lib, "cui32.lib")
-#endif // _DEBUG
-
-#endif // _WIN64
-
+	#if defined(_WIN64)
+		#if defined(_DEBUG)
+			#pragma comment(lib, "cui64d.lib")
+		#else
+			#pragma comment(lib, "cui64.lib")
+		#endif
+	#else
+		#if defined(_DEBUG)
+			#pragma comment(lib, "cui32d.lib")
+		#else
+			#pragma comment(lib, "cui32.lib")
+		#endif
+	#endif
 #endif
 
 #include <string>
@@ -115,7 +116,5 @@ namespace liblec
 			std::string name;
 			unsigned short width = 80;
 		};
-
-	} // namespace cui
-
-} // namespace liblec
+	}
+}

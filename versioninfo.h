@@ -19,9 +19,9 @@
 #define cuicopyright	"(c) 2016 Alec T. Musasa"
 #define cuifilename		"cui.dll"
 
-#define cuiversion		"1.0.0"
+#define cuiversion		"1.0.1 alpha"
 #define cuimajor		1
 #define cuiminor		0
-#define cuirevision		0
+#define cuirevision		1
 
-#define cuidate			"02 Oct 2019"
+#define cuidate			"20 Mar 2020"
