@@ -95,7 +95,7 @@ namespace liblec::cui::date_gen {
 		std::time_t time_temp = std::mktime(&time_in);
 		std::tm time_out = { };
 		localtime_s(&time_out, &time_temp);
-		return time_out.tm_wday;
+		return time_out.tm_wday + 1;
 	}
 
 	void add_days(date& dt, int n) {

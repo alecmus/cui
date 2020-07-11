@@ -105,6 +105,7 @@ SIZE GetSize(HCURSOR ico)
 
   // get coordinates of cursor
   // TO-DO: fix this ... the results are not consistent ... we're getting 32x32 but the cursor is clearly smaller than that ... fix fix fix fix ... others are doing it ... do it!!!
+  // to-do: factor in dpi scale as in lecui::dimensions and you're done
 void getCursorRect(RECT &rc)
 {
 	SIZE size = GetSize(GetCursor());
