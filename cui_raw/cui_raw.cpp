@@ -2788,18 +2788,12 @@ void cui_raw::addProgressBar(const std::basic_string<TCHAR> &sPageName,
 
 	if (iInitialPercentage > 100)
 		control.iPercentage = 100;
-	else
-	{
-		int m_iPerc = int(iInitialPercentage + 0.5);
+	else {
+		control.bBusy = control.iPercentage == -1.0;
+		control.bReverse = control.iPercentage == -2.0;
 
-		if (iInitialPercentage < 0)
-			m_iPerc = int(iInitialPercentage - 0.5);
-
-		control.bBusy = m_iPerc == -1;
-		control.bReverse = m_iPerc == -2;
-
-		if (!control.bBusy)
-			control.iPercentage = 0;
+		if (!control.bBusy && !control.bReverse)
+			control.iPercentage = max(control.iPercentage, 0.0);
 	}
 
 	control.resize = resize;
