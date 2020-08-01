@@ -116,5 +116,19 @@ namespace liblec
 			std::string name;
 			unsigned short width = 80;
 		};
+
+		/// <summary>
+		/// Keep UI responsive during lengthy calls.
+		/// </summary>
+		/// 
+		/// <returns>
+		/// Returns true to continue operation, and false to quit immediately.
+		/// </returns>
+		/// 
+		/// <remarks>
+		/// In lengthy operations it is useful to call this method between successive
+		/// steps in order to keep the UI responsive.
+		/// </remarks>
+		bool cui_api keep_alive();
 	}
 }
