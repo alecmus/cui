@@ -1868,6 +1868,10 @@ void liblec::cui::gui::modal(gui& parent) {
 	d_->p_parent_ = parent.d_->p_raw_ui_;
 }
 
+void liblec::cui::gui::modal(liblec::cui::gui_raw::cui_raw& parent) {
+	d_->p_parent_ = &parent;
+}
+
 liblec::cui::gui_raw::cui_raw& liblec::cui::gui::get_raw()
 {
 	return *d_->p_raw_ui_;

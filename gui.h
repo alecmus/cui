@@ -804,6 +804,7 @@ namespace liblec
 			~gui();
 
 			void modal(gui& parent);
+			void modal(liblec::cui::gui_raw::cui_raw& parent);
 
 			liblec::cui::gui_raw::cui_raw& get_raw();
 
