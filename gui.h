@@ -980,6 +980,8 @@ namespace liblec
 
 			void set_ui_font(const std::string &font);
 
+			void set_ui_color(color ui_color);
+
 			// window functions used after run() is called (the resizing functions also work
 			// before run() is called)
 

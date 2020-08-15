@@ -3363,6 +3363,10 @@ void liblec::cui::gui::set_ui_font(const std::string &font)
 	d_->font_ui_ = font;
 }
 
+void liblec::cui::gui::set_ui_color(color ui_color) {
+	d_->color_ui_ = RGB(ui_color.red, ui_color.green, ui_color.blue);
+}
+
 void liblec::cui::gui::disable()
 {
 	if (d_->p_raw_ui_)
