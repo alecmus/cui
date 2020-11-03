@@ -1127,6 +1127,13 @@ namespace liblec
 			bool update_image(const std::string &alias,
 				std::string &error);
 
+			bool save_image(const std::string& alias,
+				liblec::cui::image_format format,
+				liblec::cui::size max_size,
+				const std::string& full_path,
+				std::string& actual_path,
+				std::string& error);
+
 			// toggle buttons
 
 			bool set_toggle_button(const std::string &alias,

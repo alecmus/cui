@@ -4338,6 +4338,43 @@ bool liblec::cui::gui::update_image(const std::string &alias,
 	}
 } // update_image
 
+bool liblec::cui::gui::save_image(const std::string& alias,
+	liblec::cui::image_format format,
+	liblec::cui::size max_size,
+	const std::string& full_path,
+	std::string& actual_path,
+	std::string& error) {
+	if (!d_->p_raw_ui_) {
+		error = "Library usage error: liblec::cui::gui::save_image";
+		return false;
+	}
+
+	try {
+		int unique_id = d_->id_map_.at(alias);
+
+		std::string page_name = alias;
+
+		auto idx = page_name.rfind("/");
+		page_name.erase(idx, page_name.length());
+
+		std::basic_string<TCHAR> error_, full_path_ = convert_string(full_path);
+		bool result = d_->p_raw_ui_->saveImage(convert_string(page_name),
+			unique_id,
+			convert_image_format(format),
+			convert_size(max_size),
+			full_path_,
+			error_);
+
+		actual_path = convert_string(full_path_);
+		error = convert_string(error_);
+		return result;
+	}
+	catch (std::exception& e) {
+		error = e.what();
+		return false;
+	}
+}
+
 bool liblec::cui::gui::set_toggle_button(const std::string &alias,
 	const bool &on,
 	std::string &error)
