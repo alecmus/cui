@@ -3,6 +3,8 @@ cui framework, for rapid gui application development in C++ on Windows
 
 <p>
   <img alt="Lines of code" src="https://img.shields.io/tokei/lines/github/alecmus/cui">
+  <img alt="GitHub issues" src="https://img.shields.io/github/issues-raw/alecmus/cui">
+  <img alt="GitHub closed issues" src="https://img.shields.io/github/issues-closed-raw/alecmus/cui">
 </p>
 
 #### Release Info
