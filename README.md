@@ -1,6 +1,21 @@
 # cui
 cui framework, for rapid gui application development in C++ on Windows
 
+<p>
+  <em>Release Info</em>
+  <br>
+  <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/alecmus/cui">
+  <img alt="GitHub Release Date" src="https://img.shields.io/github/release-date/alecmus/cui">
+  <img alt="GitHub all releases" src="https://img.shields.io/github/downloads/alecmus/cui/total">
+</p>
+
+<p>
+  <em>Commit Info</em>
+  <br>
+  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/alecmus/cui">
+  <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/y/alecmus/cui">
+</p>
+
 ## ABOUT THE LIBRARY
 The cui framework is a library designed for the rapid development of modern, efficient and easy to maintain C++ applications with a Graphical User Interface (gui). It is part of the liblec libraries (https://github.com/alecmus/liblec).
 
