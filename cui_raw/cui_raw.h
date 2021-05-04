@@ -2,7 +2,7 @@
 ** cui_raw.h - cui_raw framework - interface
 **
 ** cui framework
-** Copyright (c) 2016 Alec T. Musasa (alecmus at live dot com)
+** Copyright (c) 2016 Alec Musasa (alecmus at live dot com)
 **
 *******************************************************************************
 ** This file is part of the liblec library which is released under the Creative
@@ -67,7 +67,7 @@ namespace liblec
 			/// 
 			/// This class is a wrapper to a WIN32 window for rapid GUI application development.
 			///	Any program that uses this class should declare itself as DPI-aware through its application manifest.
-			/// Written by Alec T. Musasa, 22 April 2015.
+			/// Written by Alec Musasa, 22 April 2015.
 			/// </remarks>
 			class cui_api cui_raw
 			{

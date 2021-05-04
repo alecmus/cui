@@ -2,7 +2,7 @@
 ** CCmdLine.h - win32 commandline parser
 **
 ** cui framework
-** Copyright (c) 2016 Alec T. Musasa (alecmus at live dot com)
+** Copyright (c) 2016 Alec Musasa (alecmus at live dot com)
 **
 *******************************************************************************
 ** This file is part of the liblec library which is released under the Creative
@@ -36,7 +36,7 @@ public:
 		if (m_cmdline)
 		{
 			/*
-			** customization by Alec T. Musasa on 26 Feb 2014
+			** customization by Alec Musasa on 26 Feb 2014
 			**
 			** replace strcpy with strcpy_s
 			*/
@@ -54,7 +54,7 @@ public:
 		if (m_cmdline)
 		{
 			/*
-			** customization by Alec T. Musasa on 26 Feb 2014
+			** customization by Alec Musasa on 26 Feb 2014
 			**
 			** replace strcpy with strcpy_s
 			*/

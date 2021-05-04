@@ -2,7 +2,7 @@
 ** upDown.cpp - up-down control implementation
 **
 ** cui framework
-** Copyright (c) 2016 Alec T. Musasa (alecmus at live dot com)
+** Copyright (c) 2016 Alec Musasa (alecmus at live dot com)
 **
 *******************************************************************************
 ** This file is part of the liblec library which is released under the Creative

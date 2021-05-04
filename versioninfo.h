@@ -2,7 +2,7 @@
 ** versioninfo.h - version information header file
 **
 ** cui framework
-** Copyright (c) 2016 Alec T. Musasa (alecmus at live dot com)
+** Copyright (c) 2016 Alec Musasa (alecmus at live dot com)
 **
 *******************************************************************************
 ** This file is part of the liblec library which is released under the Creative
@@ -16,7 +16,7 @@
 #define cuiname			"cui"
 #define cuidescription	"cui framework"
 #define cuicomments		"This file is part of the liblec library"
-#define cuicopyright	"(c) 2016 Alec T. Musasa"
+#define cuicopyright	"(c) 2016 Alec Musasa"
 #define cuifilename		"cui.dll"
 
 #define cuiversion		"1.0.1"
