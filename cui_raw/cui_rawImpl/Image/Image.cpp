@@ -507,7 +507,7 @@ LRESULT CALLBACK cui_rawImpl::ImageProc(HWND hWnd, UINT msg, WPARAM wParam, LPAR
 				}
 
 				Gdiplus::Graphics graphics_out(hdc);
-				graphics_out.DrawImage(original, pControl->rcImage.left, pControl->rcImage.top);
+				graphics_out.DrawImage(original, (Gdiplus::REAL)pControl->rcImage.left, (Gdiplus::REAL)pControl->rcImage.top);
 
 				if (original)
 				{
@@ -1040,7 +1040,7 @@ LRESULT CALLBACK cui_rawImpl::ImageProc(HWND hWnd, UINT msg, WPARAM wParam, LPAR
 				}
 
 				Gdiplus::Graphics graphics_out(hdc);
-				graphics_out.DrawImage(original, pControl->rcImage.left, pControl->rcImage.top);
+				graphics_out.DrawImage(original, (Gdiplus::REAL)pControl->rcImage.left, (Gdiplus::REAL)pControl->rcImage.top);
 
 				if (original)
 				{

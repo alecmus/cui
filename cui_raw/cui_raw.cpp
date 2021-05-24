@@ -84,7 +84,7 @@ cui_raw::cui_raw(
 
 	// capture tooltip parameters
 	d->m_sTooltipFont = sTooltipFont;
-	d->m_iTooltipFontSize = iTooltipFontSize;
+	d->m_iTooltipFontSize = iTooltipFontSize * d->m_DPIScale;
 	d->m_clrTooltipText = clrTooltipText;
 	d->m_clrTooltipBackground = clrTooltipBackground;
 	d->m_clrTooltipBorder = clrTooltipBorder;

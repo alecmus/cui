@@ -24,4 +24,4 @@
 #define cuiminor		0
 #define cuirevision		1
 
-#define cuidate			"16 Nov 2020"
+#define cuidate			"24 May 2021"

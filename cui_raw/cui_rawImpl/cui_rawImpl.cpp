@@ -100,6 +100,7 @@ cui_rawImpl::cui_rawImpl()
 	m_iMinWidthCalc = 30;
 
 	// scale for DPI
+	m_iTooltipFontSize = m_iTooltipFontSize * m_DPIScale;
 	m_iTitlebarHeight = int(0.5 + m_iTitlebarHeight * m_DPIScale);
 	m_iMinWidthCalc = int(0.5 + m_iMinWidthCalc * m_DPIScale);
 
