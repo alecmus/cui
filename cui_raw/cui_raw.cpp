@@ -62,7 +62,7 @@ cui_raw::cui_raw(
 	void* pState
 )
 {
-	d = new cui_rawImpl;
+	d = new cui_rawImpl(sPageName);
 
 	d->m_sCurrentPage = sPageName;
 
@@ -84,7 +84,7 @@ cui_raw::cui_raw(
 
 	// capture tooltip parameters
 	d->m_sTooltipFont = sTooltipFont;
-	d->m_iTooltipFontSize = iTooltipFontSize * d->m_DPIScale;
+	d->m_iTooltipFontSize = d->m_dpi_awareness_set_programmatically ? iTooltipFontSize * d->m_DPIScale : iTooltipFontSize;
 	d->m_clrTooltipText = clrTooltipText;
 	d->m_clrTooltipBackground = clrTooltipBackground;
 	d->m_clrTooltipBorder = clrTooltipBorder;

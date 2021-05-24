@@ -23,15 +23,17 @@
 #define to_tstring	std::to_string
 #endif // _UNICODE
 
-cui_rawImpl::cui_rawImpl()
+cui_rawImpl::cui_rawImpl(const std::wstring& title)
 {
-	if (!IsProcessDPIAware())
-	{
+	if (title != L"cui default window" && !IsProcessDPIAware()) {
+		m_dpi_awareness_set_programmatically = true;
 		if (!SetProcessDPIAware())
 			MessageBox(nullptr,
 				L"This program is not DPI aware. As a result, UI elements may not be clear.",
 				L"liblec::cui::gui_raw::cui_raw", MB_ICONWARNING);
 	}
+	else
+		m_dpi_awareness_set_programmatically = false;
 
 	m_hWnd = NULL;
 	m_hWndParent = NULL;
@@ -100,7 +102,7 @@ cui_rawImpl::cui_rawImpl()
 	m_iMinWidthCalc = 30;
 
 	// scale for DPI
-	m_iTooltipFontSize = m_iTooltipFontSize * m_DPIScale;
+	m_iTooltipFontSize = m_dpi_awareness_set_programmatically ? m_iTooltipFontSize * m_DPIScale : m_iTooltipFontSize;
 	m_iTitlebarHeight = int(0.5 + m_iTitlebarHeight * m_DPIScale);
 	m_iMinWidthCalc = int(0.5 + m_iMinWidthCalc * m_DPIScale);
 

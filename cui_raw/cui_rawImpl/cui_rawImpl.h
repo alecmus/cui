@@ -36,7 +36,8 @@ using namespace liblec::cui::gui_raw;
 class liblec::cui::gui_raw::cui_rawImpl
 {
 public:
-	cui_rawImpl();
+	cui_rawImpl() = delete;
+	cui_rawImpl(const std::wstring& title);
 	~cui_rawImpl();
 
 	///////////////////////////////////////////////////////////////////////////////////////
@@ -993,6 +994,7 @@ public:
 	// tooltip font parameters
 	std::basic_string<TCHAR> m_sTooltipFont;
 	double m_iTooltipFontSize;
+	bool m_dpi_awareness_set_programmatically;
 	COLORREF m_clrTooltipText;
 	COLORREF m_clrTooltipBackground;
 	COLORREF m_clrTooltipBorder;
