@@ -17,6 +17,7 @@
 #define cuidescription	"cui framework"
 #define cuicomments		"This file is part of the liblec library"
 #define cuicopyright	"(c) 2016 Alec Musasa"
+#define cuicompany		"Alec Musasa"
 #define cuifilename		"cui.dll"
 
 #define cuiversion		"1.0.1"
