@@ -59,7 +59,8 @@ LRESULT CALLBACK cui_rawImpl::TextControlProc(HWND hWnd, UINT msg, WPARAM wParam
 
 		Gdiplus::RectF layoutRect = convert_rect(rc);
 
-		Gdiplus::Font* p_font = new Gdiplus::Font(&Gdiplus::FontFamily(pThis->sFontName.c_str()),
+		Gdiplus::FontFamily ffm(pThis->sFontName.c_str());
+		Gdiplus::Font* p_font = new Gdiplus::Font(&ffm,
 			static_cast<Gdiplus::REAL>(pThis->iFontSize), style);
 
 		if (p_font->GetLastStatus() != Gdiplus::Status::Ok)

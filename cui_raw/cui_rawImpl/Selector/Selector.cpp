@@ -88,7 +88,8 @@ LRESULT CALLBACK cui_rawImpl::SelectorProc(HWND hWnd, UINT msg, WPARAM wParam, L
 
 		Gdiplus::Graphics graphics(hdc);
 		
-		Gdiplus::Font* p_font = new Gdiplus::Font(&Gdiplus::FontFamily(pControl->sFontName.c_str()),
+		Gdiplus::FontFamily ffm(pControl->sFontName.c_str());
+		Gdiplus::Font* p_font = new Gdiplus::Font(&ffm,
 			static_cast<Gdiplus::REAL>(pControl->iFontSize));
 
 		if (p_font->GetLastStatus() != Gdiplus::Status::Ok)

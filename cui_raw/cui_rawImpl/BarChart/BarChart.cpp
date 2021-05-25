@@ -250,7 +250,8 @@ static void DrawChart(HWND hGraph, HDC hdc, cui_rawImpl::BarChartControl* pState
 
 		Gdiplus::RectF layoutRect = liblec::cui::gui_raw::cui_rawImpl::convert_rect(rectTitle);
 
-		Gdiplus::Font* p_font = new Gdiplus::Font(&Gdiplus::FontFamily(pState->sFontName.c_str()), 11);
+		Gdiplus::FontFamily ffm(pState->sFontName.c_str());
+		Gdiplus::Font* p_font = new Gdiplus::Font(&ffm, 11);
 
 		if (p_font->GetLastStatus() != Gdiplus::Status::Ok)
 		{
@@ -316,7 +317,8 @@ static void DrawChart(HWND hGraph, HDC hdc, cui_rawImpl::BarChartControl* pState
 			static_cast<Gdiplus::REAL>(rectChartControl.right - rectChartControl.left - 2 * 4);
 		layoutRect.Height = 0;	// make 0 so measureString can figure it out
 
-		Gdiplus::Font* p_font = new Gdiplus::Font(&Gdiplus::FontFamily(pState->sFontName.c_str()), 9);
+		Gdiplus::FontFamily ffm(pState->sFontName.c_str());
+		Gdiplus::Font* p_font = new Gdiplus::Font(&ffm, 9);
 
 		if (p_font->GetLastStatus() != Gdiplus::Status::Ok)
 		{
@@ -382,7 +384,8 @@ static void DrawChart(HWND hGraph, HDC hdc, cui_rawImpl::BarChartControl* pState
 		layoutRect.Width = 0;
 		layoutRect.Height = 0;	// make 0 so measureString can figure it out
 
-		Gdiplus::Font* p_font = new Gdiplus::Font(&Gdiplus::FontFamily(pState->sFontName.c_str()), 9);
+		Gdiplus::FontFamily ffm(pState->sFontName.c_str());
+		Gdiplus::Font* p_font = new Gdiplus::Font(&ffm, 9);
 
 		if (p_font->GetLastStatus() != Gdiplus::Status::Ok)
 		{
@@ -506,8 +509,8 @@ static void DrawChart(HWND hGraph, HDC hdc, cui_rawImpl::BarChartControl* pState
 	}
 
 	// draw chart
-
-	Gdiplus::Font* p_font = new Gdiplus::Font(&Gdiplus::FontFamily(pState->sFontName.c_str()),
+	Gdiplus::FontFamily ffm(pState->sFontName.c_str());
+	Gdiplus::Font* p_font = new Gdiplus::Font(&ffm,
 		static_cast<Gdiplus::REAL>(pState->iFontSize));
 
 	if (p_font->GetLastStatus() != Gdiplus::Status::Ok)
@@ -829,7 +832,8 @@ static void DrawChart(HWND hGraph, HDC hdc, cui_rawImpl::BarChartControl* pState
 		{
 			Gdiplus::RectF layoutRect = liblec::cui::gui_raw::cui_rawImpl::convert_rect(rcText);
 
-			Gdiplus::Font* p_font = new Gdiplus::Font(&Gdiplus::FontFamily(pState->sFontName.c_str()), 7);
+			Gdiplus::FontFamily ffm(pState->sFontName.c_str());
+			Gdiplus::Font* p_font = new Gdiplus::Font(&ffm, 7);
 
 			if (p_font->GetLastStatus() != Gdiplus::Status::Ok)
 			{

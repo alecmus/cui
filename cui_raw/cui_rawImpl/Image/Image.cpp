@@ -255,7 +255,8 @@ LRESULT CALLBACK cui_rawImpl::ImageProc(HWND hWnd, UINT msg, WPARAM wParam, LPAR
 			if (!IsWindowEnabled(hWnd))
 				clrText = clrDarken(pControl->d->m_clrDisabled, 30);	// TO-DO: remove magic number
 
-			Gdiplus::Font* p_font = new Gdiplus::Font(&Gdiplus::FontFamily(pControl->sFontName.c_str()),
+			Gdiplus::FontFamily ffm(pControl->sFontName.c_str());
+			Gdiplus::Font* p_font = new Gdiplus::Font(&ffm,
 				static_cast<Gdiplus::REAL>(11.0 * pControl->iFontSize / 9));
 
 			if (p_font->GetLastStatus() != Gdiplus::Status::Ok)
@@ -384,7 +385,8 @@ LRESULT CALLBACK cui_rawImpl::ImageProc(HWND hWnd, UINT msg, WPARAM wParam, LPAR
 					format.SetAlignment(Gdiplus::StringAlignment::StringAlignmentNear);
 					format.SetTrimming(Gdiplus::StringTrimming::StringTrimmingEllipsisCharacter);
 
-					Gdiplus::Font* p_font_description = new Gdiplus::Font(&Gdiplus::FontFamily(pControl->sFontNameDescription.c_str()),
+					Gdiplus::FontFamily ffm(pControl->sFontNameDescription.c_str());
+					Gdiplus::Font* p_font_description = new Gdiplus::Font(&ffm,
 						static_cast<Gdiplus::REAL>(pControl->iFontSize));
 
 					if (p_font_description->GetLastStatus() != Gdiplus::Status::Ok)
@@ -641,7 +643,8 @@ LRESULT CALLBACK cui_rawImpl::ImageProc(HWND hWnd, UINT msg, WPARAM wParam, LPAR
 			if (!IsWindowEnabled(hWnd))
 				clrText = clrDarken(pControl->d->m_clrDisabled, 30);	// TO-DO: remove magic number
 
-			Gdiplus::Font* p_font = new Gdiplus::Font(&Gdiplus::FontFamily(pControl->sFontName.c_str()),
+			Gdiplus::FontFamily ffm(pControl->sFontName.c_str());
+			Gdiplus::Font* p_font = new Gdiplus::Font(&ffm,
 				static_cast<Gdiplus::REAL>(pControl->iFontSize));
 
 			if (p_font->GetLastStatus() != Gdiplus::Status::Ok)

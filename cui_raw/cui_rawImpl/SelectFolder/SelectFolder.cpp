@@ -512,7 +512,8 @@ static INT_PTR CALLBACK subProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lPara
 			// Write the button title (if any)
 			if (bHasTitle)
 			{
-				Gdiplus::Font* p_font = new Gdiplus::Font(&Gdiplus::FontFamily(pState->sFontName.c_str()),
+				Gdiplus::FontFamily ffm(pState->sFontName.c_str());
+				Gdiplus::Font* p_font = new Gdiplus::Font(&ffm,
 					static_cast<Gdiplus::REAL>(pState->iFontSize));
 
 				if (p_font->GetLastStatus() != Gdiplus::Status::Ok)
@@ -741,7 +742,8 @@ static void addWindowTitle(HWND hWnd, stateinfo_sf* pThis, int iCaptionIconWidth
 
 		Gdiplus::Graphics graphics(hdcScreen);
 
-		Gdiplus::Font* p_font = new Gdiplus::Font(&Gdiplus::FontFamily(font_name.c_str()),
+		Gdiplus::FontFamily ffm(font_name.c_str());
+		Gdiplus::Font* p_font = new Gdiplus::Font(&ffm,
 			static_cast<Gdiplus::REAL>(font_size));
 
 		if (p_font->GetLastStatus() != Gdiplus::Status::Ok)

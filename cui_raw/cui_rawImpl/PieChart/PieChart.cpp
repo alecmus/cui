@@ -468,7 +468,8 @@ void DrawPieChart(HWND hGraph, HDC hdc, cui_rawImpl::PieChartControl* pState)
 		{
 			Gdiplus::RectF layoutRect = liblec::cui::gui_raw::cui_rawImpl::convert_rect(rcText);
 
-			Gdiplus::Font* p_font = new Gdiplus::Font(&Gdiplus::FontFamily(pState->sFontName.c_str()), 7);
+			Gdiplus::FontFamily ffm(pState->sFontName.c_str());
+			Gdiplus::Font* p_font = new Gdiplus::Font(&ffm, 7);
 
 			if (p_font->GetLastStatus() != Gdiplus::Status::Ok)
 			{

@@ -133,7 +133,8 @@ LRESULT CALLBACK cui_rawImpl::BtnProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM
 		{
 			Gdiplus::RectF layoutRect = convert_rect(itemRect);
 
-			Gdiplus::Font* p_font = new Gdiplus::Font(&Gdiplus::FontFamily(p_control->sFontName.c_str()),
+			Gdiplus::FontFamily ffm(p_control->sFontName.c_str());
+			Gdiplus::Font* p_font = new Gdiplus::Font(&ffm,
 				static_cast<Gdiplus::REAL>(p_control->iFontSize));
 
 			if (p_font->GetLastStatus() != Gdiplus::Status::Ok)

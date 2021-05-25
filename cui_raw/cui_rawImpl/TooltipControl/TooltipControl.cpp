@@ -191,7 +191,8 @@ void positionTooltip(cui_rawImpl::ToolTipControl &tooltip)
 
 		Gdiplus::Graphics graphics(hdc);
 		
-		Gdiplus::Font* p_font = new Gdiplus::Font(&Gdiplus::FontFamily(tooltip.sFontName.c_str()),
+		Gdiplus::FontFamily ffm(tooltip.sFontName.c_str());
+		Gdiplus::Font* p_font = new Gdiplus::Font(&ffm,
 			static_cast<Gdiplus::REAL>(tooltip.iFontSize));
 
 		if (p_font->GetLastStatus() != Gdiplus::Status::Ok)
@@ -332,7 +333,8 @@ LRESULT CALLBACK ToolProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam)
 		brush.SetColor(color);
 		graphics.FillRectangle(&brush, itemRect);
 
-		Gdiplus::Font* p_font = new Gdiplus::Font(&Gdiplus::FontFamily(pControl->sFontName.c_str()),
+		Gdiplus::FontFamily ffm(pControl->sFontName.c_str());
+		Gdiplus::Font* p_font = new Gdiplus::Font(&ffm,
 			static_cast<Gdiplus::REAL>(pControl->iFontSize));
 
 		if (p_font->GetLastStatus() != Gdiplus::Status::Ok)

@@ -448,8 +448,9 @@ void cui_rawImpl::AddControls(HWND hWnd, std::basic_string<TCHAR> sPage, cui_raw
 
 						for (auto fontName : m_vFontNames)
 						{
+							Gdiplus::FontFamily ffm(fontName.c_str());
 							Gdiplus::Font* p_font =
-								new Gdiplus::Font(&Gdiplus::FontFamily(fontName.c_str()), 9);
+								new Gdiplus::Font(&ffm, 9);
 
 							if (p_font && p_font->GetLastStatus() != Gdiplus::Status::Ok)
 							{

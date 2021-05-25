@@ -2979,7 +2979,8 @@ bool liblec::cui::gui::run(const std::string &window_guid,
 
 		Gdiplus::Graphics graphics(hdcScreen);
 
-		Gdiplus::Font* p_font = new Gdiplus::Font(&Gdiplus::FontFamily(font_name.c_str()),
+		Gdiplus::FontFamily ffm(font_name.c_str());
+		Gdiplus::Font* p_font = new Gdiplus::Font(&ffm,
 			static_cast<Gdiplus::REAL>(font_size));
 
 		Gdiplus::RectF text_rect;

@@ -157,7 +157,8 @@ UINT msgBoxThreadFunc(LPVOID lpvoid)
 
 		Gdiplus::Graphics graphics(hdcScreen);
 
-		Gdiplus::Font* p_font = new Gdiplus::Font(&Gdiplus::FontFamily(font_name.c_str()),
+		Gdiplus::FontFamily ffm(font_name.c_str());
+		Gdiplus::Font* p_font = new Gdiplus::Font(&ffm,
 			static_cast<Gdiplus::REAL>(font_size));
 
 		if (p_font->GetLastStatus() != Gdiplus::Status::Ok)
