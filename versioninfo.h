@@ -17,9 +17,9 @@
 #define cuicompany		"Alec Musasa"
 #define cuifilename		"cui.dll"
 
-#define cuiversion		"1.0.1"
+#define cuiversion		"1.0.2"
 #define cuimajor		1
 #define cuiminor		0
-#define cuirevision		1
+#define cuirevision		2
 
-#define cuidate			"24 May 2021"
+#define cuidate			"18 Dec 2021"
