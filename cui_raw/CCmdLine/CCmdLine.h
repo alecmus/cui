@@ -1,15 +1,14 @@
+//
+// CCmdLine.h - win32 commandline parser
+//
+// cui framework, part of the liblec library
+// Copyright (c) 2016 Alec Musasa (alecmus at live dot com)
+//
+// Released under the MIT license. For full details see the
+// file LICENSE.txt
+//
+
 /*
-** CCmdLine.h - win32 commandline parser
-**
-** cui framework
-** Copyright (c) 2016 Alec Musasa (alecmus at live dot com)
-**
-*******************************************************************************
-** This file is part of the liblec library which is released under the Creative
-** Commons Attribution Non-Commercial 2.0 license (CC-BY-NC 2.0). See the file
-** LICENSE.txt or go to https://github.com/alecmus/liblec/blob/master/LICENSE.md
-** for full license details.
-*************************************************************************
 ** win32 commandline parser
 **
 ** source adapted from http://www.codeguru.com/cpp/w-p/win32/article.php/c1427/A-Simple-Win32-CommandLine-Parser.htm

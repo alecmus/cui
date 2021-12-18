@@ -1,563 +1,547 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
+    <Filter Include="cui">
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
-    <Filter Include="Resource Files\png">
-      <UniqueIdentifier>{28f0f5f0-7010-4bb0-8c64-6f9a84b59644}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Resource Files\png\richedit">
-      <UniqueIdentifier>{182a9c67-fb5b-454f-bf87-5cd907690ced}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\password_rating">
+    <Filter Include="cui\password_rating">
       <UniqueIdentifier>{04e84a46-64ed-4549-85d3-d65eb9a36190}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\password_rating\dictionary">
+    <Filter Include="cui\password_rating\dictionary">
       <UniqueIdentifier>{8dc6e90b-c051-4a55-9482-d62e3b7bc4b2}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Resource Files\doc">
-      <UniqueIdentifier>{46e9539d-a2d6-4f63-ba39-d00f9acb2318}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\unique_string">
+    <Filter Include="cui\unique_string">
       <UniqueIdentifier>{ef69ee39-002e-4d10-9aab-ff0d1fff24b0}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\time_stamp">
+    <Filter Include="cui\time_stamp">
       <UniqueIdentifier>{fb946888-940d-48c2-aa91-410ed9678e88}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\error">
+    <Filter Include="cui\error">
       <UniqueIdentifier>{75ffe26b-2275-4393-a713-ee77f6cbc632}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\limit_single_instance">
+    <Filter Include="cui\limit_single_instance">
       <UniqueIdentifier>{76f6476b-3ae5-4fd7-8e87-9786c55bc65e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\cui_raw">
+    <Filter Include="cui\cui_raw">
       <UniqueIdentifier>{08c4ac9c-8aa0-4954-a57a-796a805cc521}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\cui_raw\CBrush">
+    <Filter Include="cui\cui_raw\CBrush">
       <UniqueIdentifier>{58896284-9774-4e50-8c8d-4775930ada23}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\cui_raw\CCmdLine">
+    <Filter Include="cui\cui_raw\CCmdLine">
       <UniqueIdentifier>{ad0d09a0-2ed5-4837-8423-fe78cbab7913}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\cui_raw\CCriticalSection">
+    <Filter Include="cui\cui_raw\CCriticalSection">
       <UniqueIdentifier>{62af3803-2015-4548-82f9-5f2164f99387}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\cui_raw\CDeferPos">
+    <Filter Include="cui\cui_raw\CDeferPos">
       <UniqueIdentifier>{98ad5672-ec50-4ba8-96eb-de3aa043ee1a}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\cui_raw\CGdiPlusBitmap">
+    <Filter Include="cui\cui_raw\CGdiPlusBitmap">
       <UniqueIdentifier>{97af3a97-941b-4a09-b0fb-a4da1b49e701}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\cui_raw\CImage">
+    <Filter Include="cui\cui_raw\CImage">
       <UniqueIdentifier>{70c14958-77b9-488d-afac-e4973fdaf7fa}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\cui_raw\CImage\GetEncoderClsid">
+    <Filter Include="cui\cui_raw\CImage\GetEncoderClsid">
       <UniqueIdentifier>{6386641b-4e26-4324-8f11-c99470fd991c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\cui_raw\clrAdjust">
+    <Filter Include="cui\cui_raw\clrAdjust">
       <UniqueIdentifier>{9bc476db-b9e0-4c44-accd-59d4d6746b8b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\cui_raw\CPopupMenu">
+    <Filter Include="cui\cui_raw\CPopupMenu">
       <UniqueIdentifier>{4336e148-c6ac-4dfe-bda3-518ff5a3dc55}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\cui_raw\CResizer">
+    <Filter Include="cui\cui_raw\CResizer">
       <UniqueIdentifier>{0a2735b1-bcef-4370-8e0f-a4271710f617}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\cui_raw\Error">
+    <Filter Include="cui\cui_raw\Error">
       <UniqueIdentifier>{16e566d8-c0b3-40c3-a183-e8708789cf09}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\cui_raw\HlpFxs">
+    <Filter Include="cui\cui_raw\HlpFxs">
       <UniqueIdentifier>{5ca78e23-8abc-4d93-83dd-f0c96069365b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\cui_raw\scaleAdjust">
+    <Filter Include="cui\cui_raw\scaleAdjust">
       <UniqueIdentifier>{97835445-298a-4e13-834d-1a8001628e9a}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\cui_raw\XCreateFont">
+    <Filter Include="cui\cui_raw\XCreateFont">
       <UniqueIdentifier>{03935fb1-a6b7-47b9-bd51-bd71a3216e3a}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\cui_raw\cui_rawImpl">
+    <Filter Include="cui\cui_raw\cui_rawImpl">
       <UniqueIdentifier>{1cd4ce06-5e5a-470a-87e6-80c26d3b1368}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\cui_raw\cui_rawImpl\BarChart">
+    <Filter Include="cui\cui_raw\cui_rawImpl\BarChart">
       <UniqueIdentifier>{5be6023e-ffb7-4e9b-a944-a46c34a78d46}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\cui_raw\cui_rawImpl\Button">
+    <Filter Include="cui\cui_raw\cui_rawImpl\Button">
       <UniqueIdentifier>{20b9ede0-0fbd-43db-b7e9-bddd1a2e5f46}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\cui_raw\cui_rawImpl\Combobox">
+    <Filter Include="cui\cui_raw\cui_rawImpl\Combobox">
       <UniqueIdentifier>{6837a915-deaf-4c43-a50d-817d51734c9e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\cui_raw\cui_rawImpl\ControlButtons">
+    <Filter Include="cui\cui_raw\cui_rawImpl\ControlButtons">
       <UniqueIdentifier>{748714c8-b2f9-4947-a8ff-a0d9124ee5d7}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\cui_raw\cui_rawImpl\Date">
+    <Filter Include="cui\cui_raw\cui_rawImpl\Date">
       <UniqueIdentifier>{0fde305e-d18a-46c9-84a7-b5a1e75364c0}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\cui_raw\cui_rawImpl\Edit">
+    <Filter Include="cui\cui_raw\cui_rawImpl\Edit">
       <UniqueIdentifier>{837f7edf-1f96-4473-806b-3d00d482da51}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\cui_raw\cui_rawImpl\Image">
+    <Filter Include="cui\cui_raw\cui_rawImpl\Image">
       <UniqueIdentifier>{a2263f10-6902-4bb2-8834-019239c67d15}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\cui_raw\cui_rawImpl\LineChart">
+    <Filter Include="cui\cui_raw\cui_rawImpl\LineChart">
       <UniqueIdentifier>{c29a4575-be47-4ac6-8a13-f76b874415da}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\cui_raw\cui_rawImpl\msgBox">
+    <Filter Include="cui\cui_raw\cui_rawImpl\msgBox">
       <UniqueIdentifier>{00106dd8-d7ce-4d93-a68c-9dffe805300c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\cui_raw\cui_rawImpl\OpenSaveFile">
+    <Filter Include="cui\cui_raw\cui_rawImpl\OpenSaveFile">
       <UniqueIdentifier>{5df57688-81cc-4ab1-87dd-1d41494cb605}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\cui_raw\cui_rawImpl\PasswordStrength">
+    <Filter Include="cui\cui_raw\cui_rawImpl\PasswordStrength">
       <UniqueIdentifier>{068d7a18-adaf-4aff-a76b-c3952120b4d3}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\cui_raw\cui_rawImpl\PieChart">
+    <Filter Include="cui\cui_raw\cui_rawImpl\PieChart">
       <UniqueIdentifier>{75dd9e6b-698d-4c1e-9147-f0a726241408}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\cui_raw\cui_rawImpl\Progress">
+    <Filter Include="cui\cui_raw\cui_rawImpl\Progress">
       <UniqueIdentifier>{bfc6ecae-23b9-409f-9067-1595074bf8f1}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\cui_raw\cui_rawImpl\Rect">
+    <Filter Include="cui\cui_raw\cui_rawImpl\Rect">
       <UniqueIdentifier>{c98080ad-2124-4e6c-b99d-f837bc182642}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\cui_raw\cui_rawImpl\RichEdit">
+    <Filter Include="cui\cui_raw\cui_rawImpl\RichEdit">
       <UniqueIdentifier>{4d875868-01f2-4a44-8dd3-31c934cd1ff5}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\cui_raw\cui_rawImpl\SelectFolder">
+    <Filter Include="cui\cui_raw\cui_rawImpl\SelectFolder">
       <UniqueIdentifier>{f002214d-2810-4fae-adec-b394e12757b0}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\cui_raw\cui_rawImpl\Selector">
+    <Filter Include="cui\cui_raw\cui_rawImpl\Selector">
       <UniqueIdentifier>{edfac8a5-daa2-466f-83cd-de74ebfda09a}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\cui_raw\cui_rawImpl\StarRating">
+    <Filter Include="cui\cui_raw\cui_rawImpl\StarRating">
       <UniqueIdentifier>{e058f882-829e-43a8-a98a-53bb2614dd79}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\cui_raw\cui_rawImpl\Tab">
+    <Filter Include="cui\cui_raw\cui_rawImpl\Tab">
       <UniqueIdentifier>{29cd79a8-7b3b-4431-9de2-61badb8ab62f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\cui_raw\cui_rawImpl\Text">
+    <Filter Include="cui\cui_raw\cui_rawImpl\Text">
       <UniqueIdentifier>{7e036c40-a92f-4648-bd0a-b111a916b1ed}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\cui_raw\cui_rawImpl\Time">
+    <Filter Include="cui\cui_raw\cui_rawImpl\Time">
       <UniqueIdentifier>{279de909-8404-4425-a11b-28ed47a6c56f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\cui_raw\cui_rawImpl\ToggleButton">
+    <Filter Include="cui\cui_raw\cui_rawImpl\ToggleButton">
       <UniqueIdentifier>{0448f113-17ab-48bc-a210-c9c899517e18}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\cui_raw\cui_rawImpl\TooltipControl">
+    <Filter Include="cui\cui_raw\cui_rawImpl\TooltipControl">
       <UniqueIdentifier>{7f4de041-02ca-4aee-89d3-2e43f97d3848}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\cui_raw\cui_rawImpl\upDown">
+    <Filter Include="cui\cui_raw\cui_rawImpl\upDown">
       <UniqueIdentifier>{a5093ce5-7dfc-4e3a-9db0-6de9f47d5ff8}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\cui_raw\cui_rawImpl\notX">
+    <Filter Include="cui\cui_raw\cui_rawImpl\notX">
       <UniqueIdentifier>{afdc3dac-22e5-4be2-a7ff-deb9d6e7c441}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\cui_raw\cui_rawImpl\DrawRoundRect">
+    <Filter Include="cui\cui_raw\cui_rawImpl\DrawRoundRect">
       <UniqueIdentifier>{e11e6201-95cf-409b-8f4c-26ad15b3fceb}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\cui_raw\cui_rawImpl\CMouseTrack">
+    <Filter Include="cui\cui_raw\cui_rawImpl\CMouseTrack">
       <UniqueIdentifier>{0247f4b5-f6a3-40d7-a5d5-c13f2d7ccf34}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\cui_raw\cui_rawImpl\CListView">
+    <Filter Include="cui\cui_raw\cui_rawImpl\CListView">
       <UniqueIdentifier>{0a71addb-fb70-4d71-89b6-c15536eb528e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\cui_raw\cui_rawImpl\CShadow">
+    <Filter Include="cui\cui_raw\cui_rawImpl\CShadow">
       <UniqueIdentifier>{faa79657-72a5-4102-a051-0f1a11c1fd6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cui\doc">
+      <UniqueIdentifier>{46e9539d-a2d6-4f63-ba39-d00f9acb2318}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cui\png">
+      <UniqueIdentifier>{28f0f5f0-7010-4bb0-8c64-6f9a84b59644}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cui\png\richedit">
+      <UniqueIdentifier>{182a9c67-fb5b-454f-bf87-5cd907690ced}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="versioninfo.h">
-      <Filter>Resource Files</Filter>
-    </ClInclude>
-    <ClInclude Include="cui.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="password_rating\dictionary\dictionary.h">
-      <Filter>Source Files\password_rating\dictionary</Filter>
+      <Filter>cui\password_rating\dictionary</Filter>
     </ClInclude>
     <ClInclude Include="gui.h">
-      <Filter>Source Files</Filter>
+      <Filter>cui</Filter>
     </ClInclude>
     <ClInclude Include="error\win_error.h">
-      <Filter>Source Files\error</Filter>
+      <Filter>cui\error</Filter>
     </ClInclude>
     <ClInclude Include="limit_single_instance\limit_single_instance.h">
-      <Filter>Source Files\limit_single_instance</Filter>
-    </ClInclude>
-    <ClInclude Include="resource.h">
-      <Filter>Resource Files</Filter>
+      <Filter>cui\limit_single_instance</Filter>
     </ClInclude>
     <ClInclude Include="cui_raw\reverse.h">
-      <Filter>Source Files\cui_raw</Filter>
+      <Filter>cui\cui_raw</Filter>
     </ClInclude>
     <ClInclude Include="cui_raw\cui_raw.h">
-      <Filter>Source Files\cui_raw</Filter>
+      <Filter>cui\cui_raw</Filter>
     </ClInclude>
     <ClInclude Include="cui_raw\CBrush\CBrush.h">
-      <Filter>Source Files\cui_raw\CBrush</Filter>
+      <Filter>cui\cui_raw\CBrush</Filter>
     </ClInclude>
     <ClInclude Include="cui_raw\CCmdLine\CCmdLine.h">
-      <Filter>Source Files\cui_raw\CCmdLine</Filter>
+      <Filter>cui\cui_raw\CCmdLine</Filter>
     </ClInclude>
     <ClInclude Include="cui_raw\CCriticalSection\CCriticalSection.h">
-      <Filter>Source Files\cui_raw\CCriticalSection</Filter>
+      <Filter>cui\cui_raw\CCriticalSection</Filter>
     </ClInclude>
     <ClInclude Include="cui_raw\CDeferPos\CDeferPos.h">
-      <Filter>Source Files\cui_raw\CDeferPos</Filter>
+      <Filter>cui\cui_raw\CDeferPos</Filter>
     </ClInclude>
     <ClInclude Include="cui_raw\CGdiPlusBitmap\CGdiPlusBitmap.h">
-      <Filter>Source Files\cui_raw\CGdiPlusBitmap</Filter>
+      <Filter>cui\cui_raw\CGdiPlusBitmap</Filter>
     </ClInclude>
     <ClInclude Include="cui_raw\CImage\CImage.h">
-      <Filter>Source Files\cui_raw\CImage</Filter>
+      <Filter>cui\cui_raw\CImage</Filter>
     </ClInclude>
     <ClInclude Include="cui_raw\CImage\GetEncoderClsid\GetEncoderClsid.h">
-      <Filter>Source Files\cui_raw\CImage\GetEncoderClsid</Filter>
+      <Filter>cui\cui_raw\CImage\GetEncoderClsid</Filter>
     </ClInclude>
     <ClInclude Include="cui_raw\clrAdjust\clrAdjust.h">
-      <Filter>Source Files\cui_raw\clrAdjust</Filter>
+      <Filter>cui\cui_raw\clrAdjust</Filter>
     </ClInclude>
     <ClInclude Include="cui_raw\CPopupMenu\CPopupMenu.h">
-      <Filter>Source Files\cui_raw\CPopupMenu</Filter>
+      <Filter>cui\cui_raw\CPopupMenu</Filter>
     </ClInclude>
     <ClInclude Include="cui_raw\CResizer\CResizer.h">
-      <Filter>Source Files\cui_raw\CResizer</Filter>
+      <Filter>cui\cui_raw\CResizer</Filter>
     </ClInclude>
     <ClInclude Include="cui_raw\cui_rawImpl\cui_rawImpl.h">
-      <Filter>Source Files\cui_raw\cui_rawImpl</Filter>
+      <Filter>cui\cui_raw\cui_rawImpl</Filter>
     </ClInclude>
     <ClInclude Include="cui_raw\cui_rawImpl\Combobox\Combobox.h">
-      <Filter>Source Files\cui_raw\cui_rawImpl\Combobox</Filter>
+      <Filter>cui\cui_raw\cui_rawImpl\Combobox</Filter>
     </ClInclude>
     <ClInclude Include="cui_raw\cui_rawImpl\RichEdit\RichEdit.h">
-      <Filter>Source Files\cui_raw\cui_rawImpl\RichEdit</Filter>
+      <Filter>cui\cui_raw\cui_rawImpl\RichEdit</Filter>
     </ClInclude>
     <ClInclude Include="cui_raw\cui_rawImpl\TooltipControl\TooltipControl.h">
-      <Filter>Source Files\cui_raw\cui_rawImpl\TooltipControl</Filter>
+      <Filter>cui\cui_raw\cui_rawImpl\TooltipControl</Filter>
     </ClInclude>
     <ClInclude Include="cui_raw\cui_rawImpl\DrawRoundRect\DrawRoundRect.h">
-      <Filter>Source Files\cui_raw\cui_rawImpl\DrawRoundRect</Filter>
+      <Filter>cui\cui_raw\cui_rawImpl\DrawRoundRect</Filter>
     </ClInclude>
     <ClInclude Include="cui_raw\Error\Error.h">
-      <Filter>Source Files\cui_raw\Error</Filter>
+      <Filter>cui\cui_raw\Error</Filter>
     </ClInclude>
     <ClInclude Include="cui_raw\HlpFxs\HlpFxs.h">
-      <Filter>Source Files\cui_raw\HlpFxs</Filter>
+      <Filter>cui\cui_raw\HlpFxs</Filter>
     </ClInclude>
     <ClInclude Include="cui_raw\scaleAdjust\scaleAdjust.h">
-      <Filter>Source Files\cui_raw\scaleAdjust</Filter>
+      <Filter>cui\cui_raw\scaleAdjust</Filter>
     </ClInclude>
     <ClInclude Include="cui_raw\XCreateFont\XCreateFont.h">
-      <Filter>Source Files\cui_raw\XCreateFont</Filter>
+      <Filter>cui\cui_raw\XCreateFont</Filter>
     </ClInclude>
     <ClInclude Include="cui_raw\cui_rawImpl\CMouseTrack\CMouseTrack.h">
-      <Filter>Source Files\cui_raw\cui_rawImpl\CMouseTrack</Filter>
+      <Filter>cui\cui_raw\cui_rawImpl\CMouseTrack</Filter>
     </ClInclude>
     <ClInclude Include="cui_raw\cui_rawImpl\CListView\CListView.h">
-      <Filter>Source Files\cui_raw\cui_rawImpl\CListView</Filter>
+      <Filter>cui\cui_raw\cui_rawImpl\CListView</Filter>
     </ClInclude>
     <ClInclude Include="cui_raw\cui_rawImpl\CShadow\CShadow.h">
-      <Filter>Source Files\cui_raw\cui_rawImpl\CShadow</Filter>
+      <Filter>cui\cui_raw\cui_rawImpl\CShadow</Filter>
     </ClInclude>
     <ClInclude Include="resources\dictionary_resource.h">
-      <Filter>Resource Files</Filter>
+      <Filter>cui</Filter>
     </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>cui</Filter>
+    </ClInclude>
+    <ClInclude Include="versioninfo.h">
+      <Filter>cui</Filter>
+    </ClInclude>
+    <ClInclude Include="cui.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="versioninfo.rc">
-      <Filter>Resource Files</Filter>
-    </ResourceCompile>
-    <ResourceCompile Include="resources\dictionary_resource.rc">
-      <Filter>Resource Files</Filter>
+      <Filter>cui</Filter>
     </ResourceCompile>
     <ResourceCompile Include="resources\cui.rc">
-      <Filter>Resource Files</Filter>
+      <Filter>cui</Filter>
+    </ResourceCompile>
+    <ResourceCompile Include="resources\dictionary_resource.rc">
+      <Filter>cui</Filter>
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="cui.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="password_rating\password_rating.cpp">
-      <Filter>Source Files\password_rating</Filter>
+      <Filter>cui\password_rating</Filter>
     </ClCompile>
     <ClCompile Include="password_rating\dictionary\dictionary.cpp">
-      <Filter>Source Files\password_rating\dictionary</Filter>
+      <Filter>cui\password_rating\dictionary</Filter>
     </ClCompile>
     <ClCompile Include="unique_string\unique_string.cpp">
-      <Filter>Source Files\unique_string</Filter>
+      <Filter>cui\unique_string</Filter>
     </ClCompile>
     <ClCompile Include="time_stamp\time_stamp.cpp">
-      <Filter>Source Files\time_stamp</Filter>
+      <Filter>cui\time_stamp</Filter>
     </ClCompile>
     <ClCompile Include="gui.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>cui</Filter>
     </ClCompile>
     <ClCompile Include="error\win_error.cpp">
-      <Filter>Source Files\error</Filter>
+      <Filter>cui\error</Filter>
     </ClCompile>
     <ClCompile Include="limit_single_instance\limit_single_instance.cpp">
-      <Filter>Source Files\limit_single_instance</Filter>
+      <Filter>cui\limit_single_instance</Filter>
     </ClCompile>
     <ClCompile Include="cui_raw\cui_raw.cpp">
-      <Filter>Source Files\cui_raw</Filter>
+      <Filter>cui\cui_raw</Filter>
     </ClCompile>
     <ClCompile Include="cui_raw\CBrush\CBrush.cpp">
-      <Filter>Source Files\cui_raw\CBrush</Filter>
+      <Filter>cui\cui_raw\CBrush</Filter>
     </ClCompile>
     <ClCompile Include="cui_raw\CDeferPos\CDeferPos.cpp">
-      <Filter>Source Files\cui_raw\CDeferPos</Filter>
+      <Filter>cui\cui_raw\CDeferPos</Filter>
     </ClCompile>
     <ClCompile Include="cui_raw\CGdiPlusBitmap\CGdiPlusBitmap.cpp">
-      <Filter>Source Files\cui_raw\CGdiPlusBitmap</Filter>
+      <Filter>cui\cui_raw\CGdiPlusBitmap</Filter>
     </ClCompile>
     <ClCompile Include="cui_raw\CImage\ResizeGdiplusBitmap.cpp">
-      <Filter>Source Files\cui_raw\CImage</Filter>
+      <Filter>cui\cui_raw\CImage</Filter>
     </ClCompile>
     <ClCompile Include="cui_raw\CImage\CImageConv.cpp">
-      <Filter>Source Files\cui_raw\CImage</Filter>
+      <Filter>cui\cui_raw\CImage</Filter>
     </ClCompile>
     <ClCompile Include="cui_raw\CImage\CSplash.cpp">
-      <Filter>Source Files\cui_raw\CImage</Filter>
+      <Filter>cui\cui_raw\CImage</Filter>
     </ClCompile>
     <ClCompile Include="cui_raw\CImage\GetEncoderClsid\GetEncoderClsid.cpp">
-      <Filter>Source Files\cui_raw\CImage\GetEncoderClsid</Filter>
+      <Filter>cui\cui_raw\CImage\GetEncoderClsid</Filter>
     </ClCompile>
     <ClCompile Include="cui_raw\clrAdjust\clrAdjust.cpp">
-      <Filter>Source Files\cui_raw\clrAdjust</Filter>
+      <Filter>cui\cui_raw\clrAdjust</Filter>
     </ClCompile>
     <ClCompile Include="cui_raw\CPopupMenu\CPopupMenu.cpp">
-      <Filter>Source Files\cui_raw\CPopupMenu</Filter>
+      <Filter>cui\cui_raw\CPopupMenu</Filter>
     </ClCompile>
     <ClCompile Include="cui_raw\CResizer\CResizer.cpp">
-      <Filter>Source Files\cui_raw\CResizer</Filter>
+      <Filter>cui\cui_raw\CResizer</Filter>
     </ClCompile>
     <ClCompile Include="cui_raw\cui_rawImpl\cui_rawImpl.cpp">
-      <Filter>Source Files\cui_raw\cui_rawImpl</Filter>
+      <Filter>cui\cui_raw\cui_rawImpl</Filter>
     </ClCompile>
     <ClCompile Include="cui_raw\cui_rawImpl\AddControls.cpp">
-      <Filter>Source Files\cui_raw\cui_rawImpl</Filter>
+      <Filter>cui\cui_raw\cui_rawImpl</Filter>
     </ClCompile>
     <ClCompile Include="cui_raw\cui_rawImpl\BarChart\BarChart.cpp">
-      <Filter>Source Files\cui_raw\cui_rawImpl\BarChart</Filter>
+      <Filter>cui\cui_raw\cui_rawImpl\BarChart</Filter>
     </ClCompile>
     <ClCompile Include="cui_raw\cui_rawImpl\Button\Button.cpp">
-      <Filter>Source Files\cui_raw\cui_rawImpl\Button</Filter>
+      <Filter>cui\cui_raw\cui_rawImpl\Button</Filter>
     </ClCompile>
     <ClCompile Include="cui_raw\cui_rawImpl\Combobox\Combobox.cpp">
-      <Filter>Source Files\cui_raw\cui_rawImpl\Combobox</Filter>
+      <Filter>cui\cui_raw\cui_rawImpl\Combobox</Filter>
     </ClCompile>
     <ClCompile Include="cui_raw\cui_rawImpl\ControlButtons\ControlButtons.cpp">
-      <Filter>Source Files\cui_raw\cui_rawImpl\ControlButtons</Filter>
+      <Filter>cui\cui_raw\cui_rawImpl\ControlButtons</Filter>
     </ClCompile>
     <ClCompile Include="cui_raw\cui_rawImpl\Date\Date.cpp">
-      <Filter>Source Files\cui_raw\cui_rawImpl\Date</Filter>
+      <Filter>cui\cui_raw\cui_rawImpl\Date</Filter>
     </ClCompile>
     <ClCompile Include="cui_raw\cui_rawImpl\Edit\Edit.cpp">
-      <Filter>Source Files\cui_raw\cui_rawImpl\Edit</Filter>
+      <Filter>cui\cui_raw\cui_rawImpl\Edit</Filter>
     </ClCompile>
     <ClCompile Include="cui_raw\cui_rawImpl\Image\Image.cpp">
-      <Filter>Source Files\cui_raw\cui_rawImpl\Image</Filter>
+      <Filter>cui\cui_raw\cui_rawImpl\Image</Filter>
     </ClCompile>
     <ClCompile Include="cui_raw\cui_rawImpl\LineChart\LineChart.cpp">
-      <Filter>Source Files\cui_raw\cui_rawImpl\LineChart</Filter>
+      <Filter>cui\cui_raw\cui_rawImpl\LineChart</Filter>
     </ClCompile>
     <ClCompile Include="cui_raw\cui_rawImpl\msgBox\msgBox.cpp">
-      <Filter>Source Files\cui_raw\cui_rawImpl\msgBox</Filter>
+      <Filter>cui\cui_raw\cui_rawImpl\msgBox</Filter>
     </ClCompile>
     <ClCompile Include="cui_raw\cui_rawImpl\notX\notX.cpp">
-      <Filter>Source Files\cui_raw\cui_rawImpl\notX</Filter>
+      <Filter>cui\cui_raw\cui_rawImpl\notX</Filter>
     </ClCompile>
     <ClCompile Include="cui_raw\cui_rawImpl\OpenSaveFile\OpenSaveFile.cpp">
-      <Filter>Source Files\cui_raw\cui_rawImpl\OpenSaveFile</Filter>
+      <Filter>cui\cui_raw\cui_rawImpl\OpenSaveFile</Filter>
     </ClCompile>
     <ClCompile Include="cui_raw\cui_rawImpl\PasswordStrength\PasswordStrength.cpp">
-      <Filter>Source Files\cui_raw\cui_rawImpl\PasswordStrength</Filter>
+      <Filter>cui\cui_raw\cui_rawImpl\PasswordStrength</Filter>
     </ClCompile>
     <ClCompile Include="cui_raw\cui_rawImpl\PieChart\PieChart.cpp">
-      <Filter>Source Files\cui_raw\cui_rawImpl\PieChart</Filter>
+      <Filter>cui\cui_raw\cui_rawImpl\PieChart</Filter>
     </ClCompile>
     <ClCompile Include="cui_raw\cui_rawImpl\Progress\Progress.cpp">
-      <Filter>Source Files\cui_raw\cui_rawImpl\Progress</Filter>
+      <Filter>cui\cui_raw\cui_rawImpl\Progress</Filter>
     </ClCompile>
     <ClCompile Include="cui_raw\cui_rawImpl\Rect\Rect.cpp">
-      <Filter>Source Files\cui_raw\cui_rawImpl\Rect</Filter>
+      <Filter>cui\cui_raw\cui_rawImpl\Rect</Filter>
     </ClCompile>
     <ClCompile Include="cui_raw\cui_rawImpl\RichEdit\RichEdit.cpp">
-      <Filter>Source Files\cui_raw\cui_rawImpl\RichEdit</Filter>
+      <Filter>cui\cui_raw\cui_rawImpl\RichEdit</Filter>
     </ClCompile>
     <ClCompile Include="cui_raw\cui_rawImpl\SelectFolder\SelectFolder.cpp">
-      <Filter>Source Files\cui_raw\cui_rawImpl\SelectFolder</Filter>
+      <Filter>cui\cui_raw\cui_rawImpl\SelectFolder</Filter>
     </ClCompile>
     <ClCompile Include="cui_raw\cui_rawImpl\Selector\Selector.cpp">
-      <Filter>Source Files\cui_raw\cui_rawImpl\Selector</Filter>
+      <Filter>cui\cui_raw\cui_rawImpl\Selector</Filter>
     </ClCompile>
     <ClCompile Include="cui_raw\cui_rawImpl\StarRating\StarRating.cpp">
-      <Filter>Source Files\cui_raw\cui_rawImpl\StarRating</Filter>
+      <Filter>cui\cui_raw\cui_rawImpl\StarRating</Filter>
     </ClCompile>
     <ClCompile Include="cui_raw\cui_rawImpl\Tab\Tab.cpp">
-      <Filter>Source Files\cui_raw\cui_rawImpl\Tab</Filter>
+      <Filter>cui\cui_raw\cui_rawImpl\Tab</Filter>
     </ClCompile>
     <ClCompile Include="cui_raw\cui_rawImpl\Text\Text.cpp">
-      <Filter>Source Files\cui_raw\cui_rawImpl\Text</Filter>
+      <Filter>cui\cui_raw\cui_rawImpl\Text</Filter>
     </ClCompile>
     <ClCompile Include="cui_raw\cui_rawImpl\Time\Time.cpp">
-      <Filter>Source Files\cui_raw\cui_rawImpl\Time</Filter>
+      <Filter>cui\cui_raw\cui_rawImpl\Time</Filter>
     </ClCompile>
     <ClCompile Include="cui_raw\cui_rawImpl\ToggleButton\ToggleButton.cpp">
-      <Filter>Source Files\cui_raw\cui_rawImpl\ToggleButton</Filter>
+      <Filter>cui\cui_raw\cui_rawImpl\ToggleButton</Filter>
     </ClCompile>
     <ClCompile Include="cui_raw\cui_rawImpl\TooltipControl\TooltipControl.cpp">
-      <Filter>Source Files\cui_raw\cui_rawImpl\TooltipControl</Filter>
+      <Filter>cui\cui_raw\cui_rawImpl\TooltipControl</Filter>
     </ClCompile>
     <ClCompile Include="cui_raw\cui_rawImpl\upDown\upDown.cpp">
-      <Filter>Source Files\cui_raw\cui_rawImpl\upDown</Filter>
+      <Filter>cui\cui_raw\cui_rawImpl\upDown</Filter>
     </ClCompile>
     <ClCompile Include="cui_raw\cui_rawImpl\DrawRoundRect\DrawRoundRect.cpp">
-      <Filter>Source Files\cui_raw\cui_rawImpl\DrawRoundRect</Filter>
+      <Filter>cui\cui_raw\cui_rawImpl\DrawRoundRect</Filter>
     </ClCompile>
     <ClCompile Include="cui_raw\Error\Error.cpp">
-      <Filter>Source Files\cui_raw\Error</Filter>
+      <Filter>cui\cui_raw\Error</Filter>
     </ClCompile>
     <ClCompile Include="cui_raw\scaleAdjust\scaleAdjust.cpp">
-      <Filter>Source Files\cui_raw\scaleAdjust</Filter>
+      <Filter>cui\cui_raw\scaleAdjust</Filter>
     </ClCompile>
     <ClCompile Include="cui_raw\XCreateFont\XCreateFont.cpp">
-      <Filter>Source Files\cui_raw\XCreateFont</Filter>
+      <Filter>cui\cui_raw\XCreateFont</Filter>
     </ClCompile>
     <ClCompile Include="cui_raw\cui_rawImpl\CListView\CListView.cpp">
-      <Filter>Source Files\cui_raw\cui_rawImpl\CListView</Filter>
+      <Filter>cui\cui_raw\cui_rawImpl\CListView</Filter>
     </ClCompile>
     <ClCompile Include="cui_raw\cui_rawImpl\CShadow\CShadow.cpp">
-      <Filter>Source Files\cui_raw\cui_rawImpl\CShadow</Filter>
+      <Filter>cui\cui_raw\cui_rawImpl\CShadow</Filter>
     </ClCompile>
+    <ClCompile Include="cui.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="resources\png\richedit\bold.png">
-      <Filter>Resource Files\png\richedit</Filter>
+      <Filter>cui\png\richedit</Filter>
     </Image>
     <Image Include="resources\png\richedit\italic.png">
-      <Filter>Resource Files\png\richedit</Filter>
+      <Filter>cui\png\richedit</Filter>
     </Image>
     <Image Include="resources\png\richedit\larger.png">
-      <Filter>Resource Files\png\richedit</Filter>
+      <Filter>cui\png\richedit</Filter>
     </Image>
     <Image Include="resources\png\richedit\smaller.png">
-      <Filter>Resource Files\png\richedit</Filter>
+      <Filter>cui\png\richedit</Filter>
     </Image>
     <Image Include="resources\png\richedit\strikethrough.png">
-      <Filter>Resource Files\png\richedit</Filter>
+      <Filter>cui\png\richedit</Filter>
     </Image>
     <Image Include="resources\png\richedit\subscript.png">
-      <Filter>Resource Files\png\richedit</Filter>
+      <Filter>cui\png\richedit</Filter>
     </Image>
     <Image Include="resources\png\richedit\superscript.png">
-      <Filter>Resource Files\png\richedit</Filter>
+      <Filter>cui\png\richedit</Filter>
     </Image>
     <Image Include="resources\png\richedit\underline.png">
-      <Filter>Resource Files\png\richedit</Filter>
+      <Filter>cui\png\richedit</Filter>
     </Image>
     <Image Include="resources\png\richedit\bullets_20.png">
-      <Filter>Resource Files\png\richedit</Filter>
+      <Filter>cui\png\richedit</Filter>
     </Image>
     <Image Include="resources\png\richedit\bullets_25.png">
-      <Filter>Resource Files\png\richedit</Filter>
+      <Filter>cui\png\richedit</Filter>
     </Image>
     <Image Include="resources\png\richedit\bullets_30.png">
-      <Filter>Resource Files\png\richedit</Filter>
+      <Filter>cui\png\richedit</Filter>
     </Image>
     <Image Include="resources\png\richedit\bullets_35.png">
-      <Filter>Resource Files\png\richedit</Filter>
+      <Filter>cui\png\richedit</Filter>
     </Image>
     <Image Include="resources\png\richedit\bullets_40.png">
-      <Filter>Resource Files\png\richedit</Filter>
+      <Filter>cui\png\richedit</Filter>
     </Image>
     <Image Include="resources\png\richedit\center_align_20.png">
-      <Filter>Resource Files\png\richedit</Filter>
+      <Filter>cui\png\richedit</Filter>
     </Image>
     <Image Include="resources\png\richedit\center_align_25.png">
-      <Filter>Resource Files\png\richedit</Filter>
+      <Filter>cui\png\richedit</Filter>
     </Image>
     <Image Include="resources\png\richedit\center_align_30.png">
-      <Filter>Resource Files\png\richedit</Filter>
+      <Filter>cui\png\richedit</Filter>
     </Image>
     <Image Include="resources\png\richedit\center_align_35.png">
-      <Filter>Resource Files\png\richedit</Filter>
+      <Filter>cui\png\richedit</Filter>
     </Image>
     <Image Include="resources\png\richedit\center_align_40.png">
-      <Filter>Resource Files\png\richedit</Filter>
+      <Filter>cui\png\richedit</Filter>
     </Image>
     <Image Include="resources\png\richedit\font_color.png">
-      <Filter>Resource Files\png\richedit</Filter>
+      <Filter>cui\png\richedit</Filter>
     </Image>
     <Image Include="resources\png\richedit\justify_align_20.png">
-      <Filter>Resource Files\png\richedit</Filter>
+      <Filter>cui\png\richedit</Filter>
     </Image>
     <Image Include="resources\png\richedit\justify_align_25.png">
-      <Filter>Resource Files\png\richedit</Filter>
+      <Filter>cui\png\richedit</Filter>
     </Image>
     <Image Include="resources\png\richedit\justify_align_30.png">
-      <Filter>Resource Files\png\richedit</Filter>
+      <Filter>cui\png\richedit</Filter>
     </Image>
     <Image Include="resources\png\richedit\justify_align_35.png">
-      <Filter>Resource Files\png\richedit</Filter>
+      <Filter>cui\png\richedit</Filter>
     </Image>
     <Image Include="resources\png\richedit\justify_align_40.png">
-      <Filter>Resource Files\png\richedit</Filter>
+      <Filter>cui\png\richedit</Filter>
     </Image>
     <Image Include="resources\png\richedit\left_align_20.png">
-      <Filter>Resource Files\png\richedit</Filter>
+      <Filter>cui\png\richedit</Filter>
     </Image>
     <Image Include="resources\png\richedit\left_align_25.png">
-      <Filter>Resource Files\png\richedit</Filter>
+      <Filter>cui\png\richedit</Filter>
     </Image>
     <Image Include="resources\png\richedit\left_align_30.png">
-      <Filter>Resource Files\png\richedit</Filter>
+      <Filter>cui\png\richedit</Filter>
     </Image>
     <Image Include="resources\png\richedit\left_align_35.png">
-      <Filter>Resource Files\png\richedit</Filter>
+      <Filter>cui\png\richedit</Filter>
     </Image>
     <Image Include="resources\png\richedit\left_align_40.png">
-      <Filter>Resource Files\png\richedit</Filter>
+      <Filter>cui\png\richedit</Filter>
     </Image>
     <Image Include="resources\png\richedit\right_align_20.png">
-      <Filter>Resource Files\png\richedit</Filter>
+      <Filter>cui\png\richedit</Filter>
     </Image>
     <Image Include="resources\png\richedit\right_align_25.png">
-      <Filter>Resource Files\png\richedit</Filter>
+      <Filter>cui\png\richedit</Filter>
     </Image>
     <Image Include="resources\png\richedit\right_align_30.png">
-      <Filter>Resource Files\png\richedit</Filter>
+      <Filter>cui\png\richedit</Filter>
     </Image>
     <Image Include="resources\png\richedit\right_align_35.png">
-      <Filter>Resource Files\png\richedit</Filter>
+      <Filter>cui\png\richedit</Filter>
     </Image>
     <Image Include="resources\png\richedit\right_align_40.png">
-      <Filter>Resource Files\png\richedit</Filter>
+      <Filter>cui\png\richedit</Filter>
     </Image>
   </ItemGroup>
   <ItemGroup>
     <Text Include="resources\doc\dict.txt">
-      <Filter>Resource Files\doc</Filter>
+      <Filter>cui\doc</Filter>
     </Text>
-    <Text Include="LICENSE.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
+    <Text Include="LICENSE.txt" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="LICENSE.md">
-      <Filter>Resource Files</Filter>
-    </None>
+    <None Include="README.md" />
   </ItemGroup>
 </Project>
